@@ -14,51 +14,73 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Exer - Calcular Idade -</title>
 </head>
 
 
 
-<body onload="mostrarHora()" style="background-color: rgb(70, 142, 236);">
-    <h1 class="display-4 text-danger text-center" " >Calcular Idade</h1>
+<body>
 
-    <form class="form-group" action="#" >
+    <h1 class="display-4 text-danger text-center" >Calcular Idade</h1>
 
-        <p class="ml-3">Ano de Nascimento</p>
-        <input class="form-control ml-1" type="number" name="ano-nasc" id="iano-nasc">
+    <form action="#">
 
-        <input class="btn btn-outline-light mt-3 ml-2" type="button" value="Calcular Idade" onclick="calcularIdade()">
+        <div class="form-group ml-2">
+            <label for="nome">Nome</label>
 
-        <input class="btn btn-outline-light mt-3" type="reset" value="Limpar">
+            <input type="text" class="form-control" id="inome" placeholder="Seu nome">
+<!-- -------------------------------------------- -->
+            <label for="nascimento">Ano de Nascimento</label>
+            <input type="number" class="form-control" id="iano-nasc" placeholder="Ano de nascimento">
+            
+          </div>
 
-        <p id="res" class="mt-2 ml-3 text-center">idade</p>
+          <!-- sexo masculino -->
+        <div class="form-check ml-4">
 
+            <input class="form-check-input " type="radio" name="op-sexo" id="imasculino" value="Masculino" checked>
+            <label class="form-check-label" for="imasculino">
+             Masculino
+            </label>
+          </div>
+
+
+          <!-- sexo feminino -->
+          <div class="form-check ml-4">
+
+            <input class="form-check-input " type="radio" name="op-sexo" id="ifeminino" value="Feminino">
+            <label class="form-check-label" for="ifeminino">
+             Feminino
+            </label>
+          </div>
+
+          <input class="btn btn-primary mt-4 ml-3" type="submit" value="Saber Idade" onclick="calcularIdade()" >
+          <input class="btn btn-primary mt-4" type="reset" value="Limpar">
     </form>
 
+    <section>
 
-    <h1 class="text-center m-2">Hora do Dia</h1>
-    <section style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);">
+    <div class="text-center text-light bg-info mt-3"  id="msg" style="font-weight: 600;font-size: 1.2em;">
+        mensagem aqui
+    </div >
+
+    <div id="foto">
         
+        <img  id="imagem" class="img-fluid mt-3" src="img/idade.jpg" alt="foto princiapl">
+   </div>
 
-        <div class="text-center text-light bg-primary"  id="msg" style="font-weight: 600;font-size: 1.5em;">
-            -----------------
-        </div >
+</section>
 
-        <div id="foto">
-            
-            <img id="imagem" class="img-fluid" src="img/foto-principal.jpg" alt="">
-        </div>
-    </section>
+<footer>
+    <p class="text-center img" style="font-weight: 600;"> &copy; CopyRight - Reservados</p>
+</footer>
 
-    <footer>
-        <p class="text-center img" style="font-weight: 600;"> &copy; CopyRight - Reservados</p>
-    </footer>
+
+    <script src="js/descobrirIdade.js"></script>
+
     
-
-
-
-
-
 
 
 
@@ -75,7 +97,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-    <script src="js/script.js"></script>
+    
 
   
 </body>

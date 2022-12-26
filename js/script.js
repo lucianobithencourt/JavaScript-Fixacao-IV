@@ -1,7 +1,6 @@
-
 // Descobrir idade
 
-function calcularIdade() { 
+function calcularIdade() {
 
     var anoNasc = document.getElementById('iano-nasc').value;
 
@@ -9,13 +8,15 @@ function calcularIdade() {
 
     anoAtual.getFullYear();
 
-    var idade = (anoAtual.getFullYear()-anoNasc)
+    var idade = (anoAtual.getFullYear() - anoNasc)
 
     res.innerHTML = (`Tem ${idade} anos`);
 
-    if(idade < 18){
+    if (idade < 18) {
         alert("Você é menor de idade");
+
     } else {
         alert("Você é maior de Idade");
     }
- }
+}
+

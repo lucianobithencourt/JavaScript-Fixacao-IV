@@ -19,21 +19,40 @@
 
 
 
-<body>
-    <h1 class="display-4 text-danger text-center">Calcular Idade</h1>
+<body onload="mostrarHora()" style="background-color: rgb(70, 142, 236);">
+    <h1 class="display-4 text-danger text-center" " >Calcular Idade</h1>
 
     <form class="form-group" action="#" >
 
         <p class="ml-3">Ano de Nascimento</p>
         <input class="form-control ml-1" type="number" name="ano-nasc" id="iano-nasc">
 
-        <input class="btn btn-outline-success mt-3 ml-2" type="button" value="Calcular Idade" onclick="calcularIdade()">
+        <input class="btn btn-outline-light mt-3 ml-2" type="button" value="Calcular Idade" onclick="calcularIdade()">
 
-        <input class="btn btn-outline-info mt-3" type="reset" value="Limpar">
+        <input class="btn btn-outline-light mt-3" type="reset" value="Limpar">
 
         <p id="res" class="mt-2 ml-3 text-center">idade</p>
 
     </form>
+
+
+    <h1 class="text-center m-2">Hora do Dia</h1>
+    <section style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);">
+        
+
+        <div class="text-center text-light bg-primary"  id="msg" style="font-weight: 600;font-size: 1.5em;">
+            -----------------
+        </div >
+
+        <div id="foto">
+            
+            <img id="imagem" class="img-fluid" src="img/foto-principal.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center img" style="font-weight: 600;"> &copy; CopyRight - Reservados</p>
+    </footer>
     
 
 
